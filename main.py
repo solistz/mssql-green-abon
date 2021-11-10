@@ -17,7 +17,7 @@ def connectdb():
     # Sample select query
     cursor.execute("SELECT @@version;")
     row = cursor.fetchone()
-    print(row)
+
     while row:
         print(row[0])
         row = cursor.fetchone()
